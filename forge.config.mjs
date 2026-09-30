@@ -53,6 +53,19 @@ const config = {
       [FuseV1Options.OnlyLoadAppFromAsar]: true,
     }),
   ],
+  publishers: [
+    {
+      "name": "@electron-forge/publisher-github",
+      "config": {
+        "repository": {
+          "owner": "nolanCohoner",
+          "name": "ElectronDemoSDV"
+        },
+        "prerelease": false,
+        "draft": true
+      }
+    }
+  ]
 };
 
 export default config;
